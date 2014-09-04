@@ -131,7 +131,7 @@ class CsvExport {
 
     $headers = [
       'Content-Type' => 'application/csv',
-      'Content-Disposition', "attachment;Filename={$this->getFilename()}",
+      'Content-Disposition' => "attachment;Filename={$this->getFilename()}",
     ];
    
     return Response::create($this->buffer, 200, $headers);
