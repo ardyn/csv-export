@@ -26,13 +26,13 @@ class CsvExport {
 
 
  /**
-  * Create a CSV file from the given array and return data
+  * Create a CSV file from the given array
   *
   * @access public
   * @param array $array
-  * @return string
+  * @return CsvExport
   */
-  public function csv($array) {
+  public function make($array) {
 
     // Valid array
     if ( ! is_array($array) || ! is_array(current($array)) )
@@ -41,7 +41,9 @@ class CsvExport {
     $this->header(current($array));
     $this->body($array);
 
-  } /* function csv */
+    return $this;
+
+  } /* function make */
 
 
 
