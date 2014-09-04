@@ -1,0 +1,20 @@
+{
+    "name": "ardyn/csv-export",
+    "description": "Export multidimensional array as CSV file.",
+    "require": {
+        "symfony/http-foundation": "2.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shawn Solinko",
+            "email": "shawnsolinko@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Ardyn\\": "src/"
+      }
+    },
+    "minimum-stability": "stable"
+}
